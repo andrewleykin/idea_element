@@ -1,0 +1,6 @@
+section.company
+	.container
+		.company__list
+			each company in content.company.list
+				.company__item
+					img(src="app/img/content/"+company["src"], alt= company["alt"])

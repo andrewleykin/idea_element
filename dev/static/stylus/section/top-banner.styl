@@ -1,0 +1,58 @@
+.top-banner
+	margin-top 79px
+	padding-top 223px
+	padding-bottom 215px
+	margin-bottom 43px
+	text-align center
+	retina('../img/content/top-banner/bg-top-banner.jpg', 2, cover, center center no-repeat)
+
+.top-banner__title
+	font-size 31px
+	font-weight 700
+	line-height 27px
+	text-transform uppercase
+	display block
+	margin-bottom 24px
+
+.top-banner__text
+	font-size 21px
+	font-weight 700
+	line-height 27px
+	display block
+	max-width 451px
+	margin 0 auto 114px
+
+.top-banner__action
+	display flex
+	align-items center
+	justify-content center
+
+.top-banner__btn
+	display flex
+	justify-content center
+	align-items center
+	font-weight 700
+	text-transform uppercase
+	border 1px solid black
+	min-width 227px
+	min-height 41px
+	position relative
+	z-index 1
+	background transparent
+	overflow hidden
+	cursor pointer
+	&:before
+		content ""
+		display block
+		size(100%)
+		absolute-all(0)
+		background rgba(#fff, 0.7)
+		z-index -1
+		transform: scale(1.5)
+		filter: blur(10px)
+		transition all .2s
+	& + &
+		margin-left 115px
+	&:hover
+		&:before
+			filter: blur(0px)

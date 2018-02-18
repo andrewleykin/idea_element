@@ -1,0 +1,54 @@
+section.project
+	.container
+		.project__title-wrap
+			h3.title.project__title= content.project.title
+		.project__row
+			.project__block
+				.project__wrap
+					.project__heading
+						.project__count
+							img(src="app/img/content/"+content.project.project1.nums, alt=content.project.project1.name)
+						span.project__name= content.project.project1.name
+					.project__info
+						each project in content.project.project1.info
+							.project__info-block
+								.project__info-num
+									img(src="app/img/content/"+project["img"], alt=project["alt"])
+								p.project__text= project["text"]
+								-if(project["list"])
+									ul.project__info-list
+										each list in project["list"]
+											li.project__info-item= list["text"]
+					.project__action
+						button.btn.btn--border.project__btn(type="button")= content.project.project1.btn
+			.project__img
+				img(src="app/img/content/"+content.project.project1.img.src, alt=content.project.project1.img.alt)
+		.project__row
+			.project__count
+				img(src="app/img/content/"+content.project.project2.nums, alt=content.project.project2.name)
+		.project__row
+			.project__img
+				img(src="app/img/content/"+content.project.project2.img.src, alt=content.project.project2.img.alt)
+			.project__block
+				.project__wrap
+					.project__heading
+						span.project__name= content.project.project2.name
+					.project__info
+						each project in content.project.project2.info
+							.project__info-block
+								.project__info-num
+									img(src="app/img/content/"+project["img"], alt=project["alt"])
+								p.project__text= project["text"]
+								-if(project["list"])
+									ul.project__info-list
+										each list in project["list"]
+											li.project__info-item= list["text"]
+		.project__list
+			.project__item
+				.project__nums
+					img(src="app/img/content/"+content.project.nums, alt=content.project.alt)
+				p.project__text.project__descr= content.project.text
+				button.btn.btn--border(type="button")= content.project.btn
+			each project in content.project.projectlist
+				.project__item
+					img(src="app/img/content/"+project["src"], alt=project["alt"])
