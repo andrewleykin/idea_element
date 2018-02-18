@@ -1,7 +1,34 @@
 {
-  "navPages": {
-    "Главная страница" : "main.html",
-    "О компании" : "about.html",
-    "Каталог" : "catalog.html"
-  }
+  "nav": [
+  	{
+  		"text": "преимущества",
+  		"link": "#advantage"
+  	},
+  	{
+  		"text": "портфолио",
+  		"link": "#project"
+  	},
+  	{
+  		"text": "контакты",
+  		"link": "#contact"
+  	}
+  ],
+  "navPages": [
+    {
+      "text": "интерьер",
+      "link": "#"
+    },
+    {
+      "text": "дизайн",
+      "link": "#"
+    },
+    {
+      "text": "элементы",
+      "link": "#"
+    },
+    {
+      "text": "архитектура",
+      "link": "#"
+    }
+  ]
 }
