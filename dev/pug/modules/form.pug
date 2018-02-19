@@ -1,0 +1,10 @@
+form.form
+	.form__row
+		each form in content.contact.form.row
+			.form__block
+				input.form__input(type=form["type"] id=form["id"] name=form["name"])
+				label.form__label(for=form["id"])= form["label"]
+	.form__action
+		button.btn.btn--border.form__submit= content.contact.form.btn.text
+		a.btn.form__phone(href=content.general.phone.link)= content.general.phone.text
+	p.form__privacy= content.contact.form.privacy

@@ -2,6 +2,7 @@
   "general": {
   	"name": "IDEA",
     "logo": "logo.png",
+    "link": "http://palaguttidea.ru/",
   	"phone": {
       "text": "+7 (4712) 220-980",
       "link": "tel:+74712220980"
@@ -147,7 +148,10 @@
   },
   "individual": {
   	"title": "индивидуальный подход",
-  	"icon": "heart",
+  	"icon": {
+      "src": "individual/heart.png",
+      "alt": "heart"
+    },
   	"text": "наши специалисты помогут разобраться во всем многообразии ассортимента и подобрать текстиль специально для вашего интерьера",
   	"btn": "создайте уют прямо сейчас",
   	"img": {
@@ -157,12 +161,15 @@
   },
   "reviews": {
   	"title": "впечатления",
-  	"icon": "quote",
+  	"icon": {
+      "src": "quote.png",
+      "alt": "ковычки"
+    },
   	"list": [
   		{
   			"photo": "reviews/reviews-1.jpg",
   			"name": "Мезенцева Наталья",
-  			"text-list": [
+  			"textlist": [
   				{
   					"text": "Это фантастика!!!"
   				},
@@ -177,7 +184,7 @@
   		{
   			"photo": "reviews/reviews-2.jpg",
   			"name": "Нестерова Альбина",
-  			"text-list": [
+  			"textlist": [
   				{
   					"text": "При встрече с вами, а главное после законченной работы, я испытываю радость и желание снова обратиться к вашим талантливым рукам и идеям."
   				},
@@ -192,7 +199,7 @@
   		{
   			"photo": "reviews/reviews-3.jpg",
   			"name": "Лосева Оксана",
-  			"text-list": [
+  			"textlist": [
   				{
   					"text": "В IDEA я встретила эксклюзив человеческих и профессиональных отношений – интеллигентность, терпение и желание сделать свою работу на все сто."
   				},
@@ -205,7 +212,10 @@
   },
   "contact": {
   	"title": "контакты",
-  	"mail": "palaguttimade@mail.ru",
+  	"mail": {
+      "text": "palaguttimade@mail.ru",
+      "link": "mailto:palaguttimade@mail.ru"
+    },
   	"address": "г. Курск, ул. Союзная, д. 28Б",
   	"tag": [
   		{
@@ -221,22 +231,22 @@
   	"form": {
   		"row": [
   			{
-  				"type": "",
-  				"label": "",
-  				"name": "",
-  				"id": ""
+  				"type": "text",
+  				"label": "Имя",
+  				"name": "name",
+  				"id": "name"
   			},
   			{
-  				"type": "",
-  				"label": "",
-  				"name": "",
-  				"id": ""
+  				"type": "phone",
+  				"label": "Телефон",
+  				"name": "phone",
+  				"id": "phone"
   			},
   			{
-  				"type": "",
-  				"label": "",
-  				"name": "",
-  				"id": ""
+  				"type": "email",
+  				"label": "e-mail",
+  				"name": "email",
+  				"id": "email"
   			}
   		],
   		"btn": {

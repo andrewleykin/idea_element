@@ -1,2 +1,127 @@
 .project
 	margin-bottom 72px
+	
+.project__container
+	padding 0
+	position relative
+
+.project__line
+		height 1619px
+		position absolute
+		top 0
+		left 61px
+
+.project__title
+	padding-top 22px
+	padding-left 112px
+	margin-bottom 29px
+
+.project__row
+	display flex
+	&:nth-child(1)
+		justify-content space-between
+		.project__block
+			padding 75px 68px 47px 20px
+			align-self flex-start
+		.project__wrap
+			width 100%
+			max-width 588px
+			margin-left auto
+		.project__heading
+			margin-bottom 27px
+		.project__count
+			margin-right 130px
+		.project__info
+			width 100%
+			max-width 360px
+			margin-left auto
+		.project__img
+			margin-left 19px
+			max-width 561px
+	&:nth-child(2)
+		justify-content center
+		align-items center
+		margin-top -80px
+		.project__count
+			margin-left 65px
+	&:nth-child(3)
+		justify-content flex-end
+		margin-top -65px
+		.project__block
+			padding 73px 20px 105px 134px
+			align-self flex-end
+			max-width 693px
+		.project__wrap
+			margin-right auto
+		.project__heading
+			margin-bottom 75px
+		.project__img
+			margin-right 22px
+			max-width 543px
+
+.project__block
+	background bg-gray-color
+	width 100%
+
+.project__heading
+	display flex
+
+.project__name
+	font-size 21px
+	font-weight 700
+	line-height 27px
+
+.project__info
+	display flex
+
+.project__info-block
+	width 100%
+	max-width 160px
+	& + &
+		margin-left 62px
+
+.project__info-num
+	margin-bottom 17px
+
+.project__text
+	font-size 21px
+	font-weight 700
+	line-height 27px
+
+.project__info-list
+	margin-top 15px
+
+.project__info-item
+	line-height 20px
+
+.project__btn
+	padding 12px 12px 14px
+
+.project__btn--second
+	padding 13px 38px 16px 37px
+
+.project__img
+	width 100%
+
+.project__list
+	margin-top 19px
+	display flex
+	align-items center
+	justify-content flex-end
+
+.project__item
+	&:first-child
+		margin-right 19px
+	& + &
+		margin-left 18px
+
+.project__nums
+	margin-bottom 30px
+	img
+		display block
+		margin-left auto
+
+.project__descr
+	max-width 152px
+	margin-bottom 30px
+	margin-left 24px

@@ -1,14 +1,15 @@
-section.advantage
+section.advantage#advantage
 	.container
-		h3.title.advantage__title= content.advantage.title
+		span.line.advantage__line
+		h3.title.advantage__title.wow.fadeInLeft= content.advantage.title
 		.advantage__list
 			each advantage in content.advantage.list
-				.advantage__item
+				.advantage__item.wow.fadeIn
 					.advantage__icon
 						img(src="app/img/content/"+advantage["img"], alt=advantage["name"])
 					.advantage__info
 						span.advantage__name= advantage["name"]
 						p.advanatge__text= advantage["text"]
 			.advantage__item
-				button.btn.advantage__btn(type="button")= content.advantage.btn
+				button.btn.advantage__btn.js-contact(href="#contact")= content.advantage.btn
 				p.advantage__text проконсультируйтесь <span>со специалистом и получите</span> персональную скидку

@@ -15,15 +15,13 @@
         <header class="header">
           <div class="container">
             <div class="header__wrap">
-              <div class="header__logo">
-                <div class="logo"><img src="app/img/general/logo.png" alt="IDEA"></div>
-              </div>
+              <div class="header__logo"><a class="logo" href="http://palaguttidea.ru/" target="_blank"><img src="app/img/general/logo.png" alt="IDEA"></a></div>
               <div class="header__nav">
                 <nav class="menu">
                   <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#advantage">преимущества</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#project">портфолио</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#contact">контакты</a></li>
+                    <li class="menu__item"><a class="menu__link js-contact" href="#advantage">преимущества</a></li>
+                    <li class="menu__item"><a class="menu__link js-contact" href="#project">портфолио</a></li>
+                    <li class="menu__item"><a class="menu__link js-contact" href="#contact">контакты</a></li>
                   </ul>
                 </nav>
               </div>
@@ -39,13 +37,13 @@
             <h2 class="top-banner__title">создайте интерьер вашей мечты</h2>
             <p class="top-banner__text">наша команда готова предложить вам лучшие решения, оставась в рамках бюджета</p>
             <div class="top-banner__action"><a class="top-banner__btn top-banner__phone" href="tel:+74712220980">+7 (4712) 220-980</a>
-              <button class="top-banner__btn top-banner__call" type="button">заказать звонок</button>
+              <button class="top-banner__btn top-banner__call js-contact" href="#contact" type="button">заказать звонок</button>
             </div>
           </div>
         </section>
         <!-- / Top banner-->
         <!-- Company-->
-        <section class="company">
+        <section class="company wow fadeInDown">
           <div class="container">
             <div class="company__list">
               <div class="company__item"><img src="app/img/content//company/1.png" alt="Company 1"></div>
@@ -57,42 +55,42 @@
         </section>
         <!-- / Company-->
         <!-- Advantage-->
-        <section class="advantage">
-          <div class="container">
-            <h3 class="title advantage__title">наши преимущества</h3>
+        <section class="advantage" id="advantage">
+          <div class="container"><span class="line advantage__line"></span>
+            <h3 class="title advantage__title wow fadeInLeft">наши преимущества</h3>
             <div class="advantage__list">
-              <div class="advantage__item">
+              <div class="advantage__item wow fadeIn">
                 <div class="advantage__icon"><img src="app/img/content/advantage/1.png" alt="ассортимент"></div>
                 <div class="advantage__info"><span class="advantage__name">ассортимент</span>
                   <p class="advanatge__text">Мы используем только качественные и наиболее популярные ткани</p>
                 </div>
               </div>
-              <div class="advantage__item">
+              <div class="advantage__item wow fadeIn">
                 <div class="advantage__icon"><img src="app/img/content/advantage/2.png" alt="качество"></div>
                 <div class="advantage__info"><span class="advantage__name">качество</span>
                   <p class="advanatge__text">Наша продукция проходит строгий контроль качества</p>
                 </div>
               </div>
-              <div class="advantage__item">
+              <div class="advantage__item wow fadeIn">
                 <div class="advantage__icon"><img src="app/img/content/advantage/3.png" alt="опыт"></div>
                 <div class="advantage__info"><span class="advantage__name">опыт</span>
                   <p class="advanatge__text">Более 130 успешных проектов, как частных, так и коммерческих</p>
                 </div>
               </div>
-              <div class="advantage__item">
+              <div class="advantage__item wow fadeIn">
                 <div class="advantage__icon"><img src="app/img/content/advantage/4.png" alt="собственное производство"></div>
                 <div class="advantage__info"><span class="advantage__name">собственное производство</span>
                   <p class="advanatge__text">Мы не останавливаемся на поисках новых решений, а создаем их</p>
                 </div>
               </div>
-              <div class="advantage__item">
+              <div class="advantage__item wow fadeIn">
                 <div class="advantage__icon"><img src="app/img/content/advantage/5.png" alt="комплексный подбор"></div>
                 <div class="advantage__info"><span class="advantage__name">комплексный подбор</span>
                   <p class="advanatge__text">Вы выбираете эллемент, мы создаем композицию</p>
                 </div>
               </div>
               <div class="advantage__item">
-                <button class="btn advantage__btn" type="button">совершенно бесплатно!</button>
+                <button class="btn advantage__btn js-contact" href="#contact">совершенно бесплатно!</button>
                 <p class="advantage__text">проконсультируйтесь <span>со специалистом и получите</span> персональную скидку</p>
               </div>
             </div>
@@ -100,83 +98,200 @@
         </section>
         <!-- / Advantage-->
         <!-- Project-->
-        <section class="project">
-          <div class="container">
-            <div class="project__title-wrap">
-              <h3 class="title project__title">наши работы</h3>
-            </div>
-            <div class="project__row">
-              <div class="project__block">
-                <div class="project__wrap">
-                  <div class="project__heading">
-                    <div class="project__count"><img src="app/img/content/project/num-01.png" alt="АРАБЕСКИ"></div><span class="project__name">АРАБЕСКИ</span>
-                  </div>
-                  <div class="project__info">
-                    <div class="project__info-block">
-                      <div class="project__info-num"><img src="app/img/content/project/meter-90.png" alt="90м"></div>
-                      <p class="project__text">общая площадь проекта</p>
+        <section class="project" id="project">
+          <div class="container project__container"><span class="line project__line"></span>
+            <h3 class="title project__title">наши работы</h3>
+            <div class="project__wrap">
+              <div class="project__row">
+                <div class="project__block wow fadeInLeft">
+                  <div class="project__wrap">
+                    <div class="project__heading">
+                      <div class="project__count"><img src="app/img/content/project/num-01.png" alt="АРАБЕСКИ"></div><span class="project__name">АРАБЕСКИ</span>
                     </div>
-                    <div class="project__info-block">
-                      <div class="project__info-num"><img src="app/img/content/project/material.png" alt="материалы"></div>
-                      <p class="project__text">использованы материалы:</p>
-                      <ul class="project__info-list">
-                        <li class="project__info-item">Dayligh</li>
-                        <li class="project__info-item">Arben</li>
-                        <li class="project__info-item">NOPE</li>
-                      </ul>
+                    <div class="project__info">
+                      <div class="project__info-block">
+                        <div class="project__info-num"><img src="app/img/content/project/meter-90.png" alt="90м"></div>
+                        <p class="project__text">общая площадь проекта</p>
+                      </div>
+                      <div class="project__info-block">
+                        <div class="project__info-num"><img src="app/img/content/project/material.png" alt="материалы"></div>
+                        <p class="project__text">использованы материалы:</p>
+                        <ul class="project__info-list">
+                          <li class="project__info-item">Dayligh</li>
+                          <li class="project__info-item">Arben</li>
+                          <li class="project__info-item">NOPE</li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                  <div class="project__action">
-                    <button class="btn btn--border project__btn" type="button">заказать свой проект</button>
+                    <div class="project__action">
+                      <button class="btn btn--border project__btn js-contact" href="#contact" type="button">заказать свой проект</button>
+                    </div>
                   </div>
                 </div>
+                <div class="project__img wow fadeInRight"><img src="app/img/content/project/1.jpg" alt="project-1"></div>
               </div>
-              <div class="project__img"><img src="app/img/content/project/1.jpg" alt="project-1"></div>
-            </div>
-            <div class="project__row">
-              <div class="project__count"><img src="app/img/content/project/num-02.png" alt="ФАРФОРОВАЯ НОТА"></div>
-            </div>
-            <div class="project__row">
-              <div class="project__img"><img src="app/img/content/project/2.jpg" alt="project-2"></div>
-              <div class="project__block">
-                <div class="project__wrap">
-                  <div class="project__heading"><span class="project__name">ФАРФОРОВАЯ НОТА</span></div>
-                  <div class="project__info">
-                    <div class="project__info-block">
-                      <div class="project__info-num"><img src="app/img/content/project/meter-80.png" alt="80м"></div>
-                      <p class="project__text">общая площадь проекта</p>
-                    </div>
-                    <div class="project__info-block">
-                      <div class="project__info-num"><img src="app/img/content/project/material.png" alt="Материалы"></div>
-                      <p class="project__text">использованы материалы:</p>
-                      <ul class="project__info-list">
-                        <li class="project__info-item">Dayligh</li>
-                        <li class="project__info-item">Arben</li>
-                      </ul>
+              <div class="project__row wow fadeIn">
+                <div class="project__count"><img src="app/img/content/project/num-02.png" alt="ФАРФОРОВАЯ НОТА"></div>
+              </div>
+              <div class="project__row">
+                <div class="project__img wow fadeInLeft"><img src="app/img/content/project/2.jpg" alt="project-2"></div>
+                <div class="project__block wow fadeInRight">
+                  <div class="project__wrap">
+                    <div class="project__heading"><span class="project__name">ФАРФОРОВАЯ НОТА</span></div>
+                    <div class="project__info">
+                      <div class="project__info-block">
+                        <div class="project__info-num"><img src="app/img/content/project/meter-80.png" alt="80м"></div>
+                        <p class="project__text">общая площадь проекта</p>
+                      </div>
+                      <div class="project__info-block">
+                        <div class="project__info-num"><img src="app/img/content/project/material.png" alt="Материалы"></div>
+                        <p class="project__text">использованы материалы:</p>
+                        <ul class="project__info-list">
+                          <li class="project__info-item">Dayligh</li>
+                          <li class="project__info-item">Arben</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="project__list">
-              <div class="project__item">
+              <div class="project__item wow fadeInLeft">
                 <div class="project__nums"><img src="app/img/content/project/num-130.png" alt="130 проектов"></div>
                 <p class="project__text project__descr">реализованных проектов</p>
-                <button class="btn btn--border" type="button">заказать проект</button>
+                <button class="btn btn--border project__btn--second" type="button">заказать проект</button>
               </div>
-              <div class="project__item"><img src="app/img/content/project/3.jpg" alt="project-3"></div>
-              <div class="project__item"><img src="app/img/content/project/4.jpg" alt="project-4"></div>
-              <div class="project__item"><img src="app/img/content/project/5.jpg" alt="project-5"></div>
+              <div class="project__item wow fadeInRight"><img src="app/img/content/project/3.jpg" alt="project-3"></div>
+              <div class="project__item wow fadeInRight"><img src="app/img/content/project/4.jpg" alt="project-4"></div>
+              <div class="project__item wow fadeInRight"><img src="app/img/content/project/5.jpg" alt="project-5"></div>
             </div>
           </div>
         </section>
         <!-- / Project-->
+        <!-- Individual-->
+        <section class="individual">
+          <div class="container">
+            <div class="individual__wrap">
+              <div class="individual__img wow fadeInLeft"><img src="app/img/content/individual/individual.jpg" alt="индивидуальный подход"></div>
+              <div class="individual__info"><span class="line individual__line"></span>
+                <h3 class="title individual__title wow fadeInRight">индивидуальный подход</h3>
+                <div class="individual__icon"><img src="app/img/content/individual/heart.png" alt="heart"></div>
+                <p class="individual__text">наши специалисты помогут разобраться во всем многообразии ассортимента и подобрать текстиль специально для вашего интерьера</p>
+                <button class="btn individual__btn js-contact" href="#contact" type="button">создайте уют прямо сейчас</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- / Individual-->
+        <!-- Reviews-->
+        <section class="reviews">
+          <div class="container">
+            <h3 class="title reviews__title">впечатления<span class="line reviews__line"></span></h3>
+            <div class="reviews_wrap">
+              <div class="reviews__user">
+                <div class="reviews__el">
+                  <div class="reviews__photo"><img src="app/img/content/reviews/reviews-1.jpg" alt="Мезенцева Наталья"></div><span class="reviews__name">Мезенцева Наталья</span>
+                </div>
+                <div class="reviews__el">
+                  <div class="reviews__photo"><img src="app/img/content/reviews/reviews-2.jpg" alt="Нестерова Альбина"></div><span class="reviews__name">Нестерова Альбина</span>
+                </div>
+                <div class="reviews__el">
+                  <div class="reviews__photo"><img src="app/img/content/reviews/reviews-3.jpg" alt="Лосева Оксана"></div><span class="reviews__name">Лосева Оксана</span>
+                </div>
+              </div>
+              <div class="reviews__descr">
+                <div class="reviews__item">
+                  <div class="reviews__icon"><img src="app/img/general/quote.png" alt="ковычки"></div>
+                  <div class="reviews__text">
+                    <p>Это фантастика!!!</p>
+                    <p>Хочу выразить огромную благодарность дизайн-бюро IDEA и, в часности, особую благодарность главному дизайнеру и руководителю Алексею Палагута, а также прорабу Константину Бириньш.</p>
+                    <p>За их труд и креативность, за грамотное претворение проекта в реальность, за чуткое и доброе отношение к заказчикам.</p>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__icon"><img src="app/img/general/quote.png" alt="ковычки"></div>
+                  <div class="reviews__text">
+                    <p>При встрече с вами, а главное после законченной работы, я испытываю радость и желание снова обратиться к вашим талантливым рукам и идеям.</p>
+                    <p>Настроение как ожидание Деда Мороза в детстве!</p>
+                    <p>Спасибо за то, что каждый гость «ахает» и спрашивает: «где взяла такое покрывало?» и «кто сшил такие шторы?». Вы – классные!</p>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__icon"><img src="app/img/general/quote.png" alt="ковычки"></div>
+                  <div class="reviews__text">
+                    <p>В IDEA я встретила эксклюзив человеческих и профессиональных отношений – интеллигентность, терпение и желание сделать свою работу на все сто.</p>
+                    <p>Большое вам спасибо за сотрудничество, вы расцветили жизнь!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- / Reviews-->
+        <!-- Contact-->
+        <section class="contact" id="contact">
+          <div class="container">
+            <div class="contact__wrap">
+              <div class="contact__block wow fadeInLeft"><span class="line contact__line"></span>
+                <div class="contact__tag"><span>Создайте УЮТ сегодня!</span><span>Не знаете как?</span><span>У нас есть ИДЕЯ!</span>
+                </div>
+                <div class="contact__form">
+                  <form class="form">
+                    <div class="form__row">
+                      <div class="form__block">
+                        <input class="form__input" type="text" id="name" name="name">
+                        <label class="form__label" for="name">Имя</label>
+                      </div>
+                      <div class="form__block">
+                        <input class="form__input" type="phone" id="phone" name="phone">
+                        <label class="form__label" for="phone">Телефон</label>
+                      </div>
+                      <div class="form__block">
+                        <input class="form__input" type="email" id="email" name="email">
+                        <label class="form__label" for="email">e-mail</label>
+                      </div>
+                    </div>
+                    <div class="form__action">
+                      <button class="btn btn--border form__submit">отправить заявку</button><a class="btn form__phone" href="tel:+74712220980">+7 (4712) 220-980</a>
+                    </div>
+                    <p class="form__privacy">нажимая кнопку отправить вы даете согласие на обработку персональных данных</p>
+                  </form>
+                </div>
+              </div>
+              <div class="contact__info wow fadeInRight">
+                <h3 class="title contact__title">контакты</h3>
+                <div class="contact__descr"><a class="contact__link" href="tel:+74712220980">+7 (4712) 220-980</a><a class="contact__mail" href="mailto:palaguttimade@mail.ru">palaguttimade@mail.ru</a>
+                  <p class="contact__address">г. Курск, ул. Союзная, д. 28Б</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- / Contact-->
         <!-- / Content-->
         <!-- Footer-->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__wrap">
+              <h4 class="footer__company">Дизайн-бюро «IDEA»  © 2018</h4>
+              <div class="footer__menu">
+                <nav class="nav-pages">
+                  <ul class="nav-pages__list">
+                    <li class="nav-pages__item"><a class="nav-pages__link" href="#">интерьер</a></li>
+                    <li class="nav-pages__item"><a class="nav-pages__link" href="#">дизайн</a></li>
+                    <li class="nav-pages__item"><a class="nav-pages__link" href="#">элементы</a></li>
+                    <li class="nav-pages__item"><a class="nav-pages__link" href="#">архитектура</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </footer>
         <!-- / Footer-->
       </div>
       <script src="app/js/libs.min.js"></script>
-      <script src="app/js/main.js"></script>
+      <script src="app/js/app.js"></script>
     </body>
   </head>
 </html>

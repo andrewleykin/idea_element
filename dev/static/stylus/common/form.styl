@@ -1,0 +1,51 @@
+.form
+	width 100%
+	max-width 603px
+
+.form__row
+	display flex
+	margin-bottom 41px
+
+.form__block
+	position relative
+	max-width 33.33%
+
+.form__input
+	display block
+	background transparent
+	border-left: 3px solid golden-color
+	color golden-color
+	font-weight 700
+	text-transform uppercase
+	letter-spacing 0.16px
+	padding 13px 10px 9px 21px
+	&:focus
+		&+.form__label
+			opacity 0
+
+.form__label
+	color golden-color
+	font-weight 700
+	text-transform uppercase
+	letter-spacing 0.16px
+	position absolute
+	top 13px
+	left 24px
+	transition: all .2s
+
+.form__action
+	display flex
+	margin-bottom 16px
+
+.form__submit
+	padding 16px 29px 15px 31px
+	margin-right 69px
+
+.form__phone
+	padding 16px 49px 11px 47px
+
+.form__privacy
+	color form-gray-color
+	font-size 10px
+	font-style italic
+	margin-left 24px

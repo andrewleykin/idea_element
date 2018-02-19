@@ -1,0 +1,16 @@
+section.contact#contact
+	.container
+		.contact__wrap
+			.contact__block.wow.fadeInLeft
+				span.line.contact__line
+				.contact__tag
+					each tag in content.contact.tag
+						span= tag["text"]
+				.contact__form
+					include ../modules/form
+			.contact__info.wow.fadeInRight
+				h3.title.contact__title= content.contact.title
+				.contact__descr
+					a.contact__link(href=content.general.phone.link)= content.general.phone.text
+					a.contact__mail(href=content.contact.mail.link)= content.contact.mail.text
+					p.contact__address= content.contact.address

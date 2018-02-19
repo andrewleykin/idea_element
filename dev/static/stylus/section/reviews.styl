@@ -1,0 +1,86 @@
+.reviews
+	margin-bottom 81px
+
+.reviews__title
+	margin-left 36%
+	margin-bottom 67px
+	padding-top 27px
+	padding-left 52px
+	position relative
+
+.reviews__line
+	position absolute
+	top 0
+	left 0
+	height 642px
+	z-index 5
+
+.reviews_wrap
+	display flex
+
+.reviews__user
+	width 100%
+	max-width 200px
+	padding-top 13px
+	margin-left 195px
+	margin-right 70px
+	text-align center
+	.slick-dots
+		display flex
+		margin-top 79px
+		align-items center
+		justify-content center
+		li
+			font-size 0
+			background url(../img/general/dot.png) center no-repeat
+			width 23px
+			height 23px
+			cursor pointer
+			margin-right 23px
+			&:last-child
+				margin-right 0
+			&.slick-active
+				background url(../img/general/dot--fill.png) center no-repeat
+				background-size cover
+
+.reviews__photo
+	margin-bottom 51px
+	img
+		display block
+		margin 0 auto
+
+.reviews__name
+	font-size 21px
+	font-weight 700
+
+.reviews__descr
+	width 100%
+	max-width 679px
+	background-color bg-gray-color
+	padding 30px 64px 20px 52px
+	position relative
+	.slick-arrow
+		position absolute
+		top 50%
+		transform translateY(-50%)
+		font-size 0
+		background url("../img/general/arrow.png") center no-repeat
+		width 29px
+		height 44px
+		cursor pointer
+		&.slick-prev
+			left -332px
+		&.slick-next
+			right -53px
+			transform translateY(-50%) rotate(180deg)
+
+.reviews__icon
+	margin-left 5px
+	margin-bottom 49px
+
+.reviews__text
+	font-size 21px
+	font-style italic
+	line-height 27px
+	p+p
+		margin-top 15px

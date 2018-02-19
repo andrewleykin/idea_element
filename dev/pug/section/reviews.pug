@@ -1,0 +1,19 @@
+section.reviews
+	.container
+		h3.title.reviews__title= content.reviews.title
+			span.line.reviews__line
+		.reviews_wrap
+			.reviews__user
+				each user in content.reviews.list
+					.reviews__el
+						.reviews__photo
+							img(src="app/img/content/"+user["photo"], alt=user["name"])
+						span.reviews__name= user["name"]
+			.reviews__descr
+				each descr in content.reviews.list
+					.reviews__item
+						.reviews__icon
+							img(src="app/img/general/"+content.reviews.icon.src, alt=content.reviews.icon.alt)
+						.reviews__text
+							each text in descr["textlist"]
+								p= text["text"]

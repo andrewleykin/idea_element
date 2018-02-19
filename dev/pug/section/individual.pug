@@ -1,0 +1,12 @@
+section.individual
+	.container
+		.individual__wrap
+			.individual__img.wow.fadeInLeft
+				img(src="app/img/content/"+content.individual.img.src, alt=content.individual.img.alt)
+			.individual__info
+				span.line.individual__line
+				h3.title.individual__title.wow.fadeInRight= content.individual.title
+				.individual__icon
+					img(src="app/img/content/"+content.individual.icon.src, alt=content.individual.icon.alt)
+				p.individual__text= content.individual.text
+				button.btn.individual__btn.js-contact(href="#contact" type="button")= content.individual.btn

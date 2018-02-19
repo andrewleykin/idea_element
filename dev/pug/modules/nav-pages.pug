@@ -1,0 +1,5 @@
+nav.nav-pages
+	ul.nav-pages__list
+		each navPages in nav.navPages
+			li.nav-pages__item
+				a.nav-pages__link(href=navPages["link"])= navPages["text"]
